@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TweetPulse - Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="stylesheet" href="/static/style.css">
+
+
+    <script>
+        function showForm(formType) {
+            document.getElementById("login-form").style.display = (formType === 'login') ? "block" : "none";
+            document.getElementById("register-form").style.display = (formType === 'register') ? "block" : "none";
+            document.getElementById("login-tab").classList.toggle("active-tab", formType === 'login');
+            document.getElementById("register-tab").classList.toggle("active-tab", formType === 'register');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Left Side: Introduction -->
+        <div class="left-section">
+            <h1>Welcome to TweetPulse</h1>
+            <p>Stay connected to what people are saying about various products . Our dashboard gives you real-time insights into public sentiment, helping you track trends, spot shifts, and stay ahead.</p>
+            <p>✨ See brand sentiment at a glance📊 Explore trends through interactive visuals🚨 Get instant alerts on major opinion changes Make data-driven decisions with ease. Log in to get started!</p>
+        </div>
+
+        <!-- Right Side: Login Form -->
+        <div class="right-section">
+            <div class="login-box">
+                <h2>Login</h2>
+                <form method="post" action="/login">
+                <input type="text" name="username" placeholder="Email" required />
+                <input type="password" name="password" placeholder="Password" required />
+                <button type="submit" class="login-btn">Login User Credentials</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
