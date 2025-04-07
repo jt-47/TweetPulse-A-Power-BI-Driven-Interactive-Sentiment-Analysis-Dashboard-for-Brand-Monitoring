@@ -1,0 +1,109 @@
+/* ---- Global Styles ---- */
+body {
+    background-color: black; /* Set the background color to black */
+    background-image: url('/static/images/background.jpg');  /* Adjust the path */
+    background-size: cover;  /* Cover full screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* No repeating */
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for two sections */
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    background: rgba(0, 0, 0, 0.7); /* Transparent dark background */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Left section (Introduction) */
+.left-section {
+    flex: 1;
+    padding: 40px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.left-section h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4CAF50; /* Green color */
+}
+
+.left-section p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Right section (Login Form) */
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 40px;
+}
+
+/* ---- Card Style ---- */
+.card {
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 25px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* ---- Title ---- */
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    color: green; /* Green title color */
+    margin-bottom: 15px;
+}
+
+/* ---- Input Fields ---- */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* ---- Buttons ---- */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* ---- Login & Register Buttons ---- */
+.login-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
