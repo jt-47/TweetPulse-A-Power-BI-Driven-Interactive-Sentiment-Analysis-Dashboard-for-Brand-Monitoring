@@ -78,9 +78,9 @@ def get_db_connection():
     try:
         connection = mysql.connector.connect(
             host='localhost',  # Replace with your MySQL host
-            user='root',  # Replace with your MySQL username
-            password='Root@12345',  # Replace with your MySQL password
-            database='ajith'  # Replace with your MySQL database name
+            user='',  # Replace with your MySQL username
+            password='',  # Replace with your MySQL password
+            database=''  # Replace with your MySQL database name
         )
         if connection.is_connected():
             print("Connected to MySQL database")
@@ -332,9 +332,9 @@ def send_email_alert(negative_percentage):
     subject = "🚨 Alert: Sudden Increase in Negative Tweets!"
     body = f"Negative sentiment has risen to {negative_percentage:.2f}% in the last hour.\nCheck the dashboard for details."
     
-    sender_email = "jerrythomastj10@gmail.com"
-    receiver_email = "jerry.csa2125@saintgits.org"
-    password = "bkjeiljrwmdphpww"
+    sender_email = ""
+    receiver_email = ""
+    password = ""
 
     msg = MIMEMultipart()
     msg["From"] = sender_email
